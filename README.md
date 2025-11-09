@@ -13,9 +13,13 @@ mkdir features steps pages
 
 npm install --save-dev multiple-cucumber-html-reporter
 
-#PARA CORRER TODO O SOLO LAS DE PEÑA O YO
+# PARA CORRER TODO O SOLO LAS DE PEÑA O YO
 npm run test:bdd
+
 cucumber-js --tags @personaA
+
 cucumber-js --tags @personaB
+
 npm run report
+
 start reports/html/index.html
