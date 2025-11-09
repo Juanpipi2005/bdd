@@ -1,0 +1,19 @@
+{
+  "name": "orangehrm-bdd",
+  "version": "1.0.0",
+  "scripts": {
+    "test:bdd": "cucumber-js",
+    "test:bdd:failed": "cucumber-js --name \"Acceder a la página de recuperación\" --name \"Buscar empleado por nombre\"",
+    "test:bdd:rerun": "cucumber-js @reports/rerun.txt",
+    "report": "node generate-report.js"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^20.11.30",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
