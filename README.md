@@ -16,9 +16,16 @@ npm install --save-dev multiple-cucumber-html-reporter
 # PARA CORRER TODO O SOLO LAS DE PEÑA O YO
 npm run test:bdd
 
-cucumber-js --tags @personaA
+# Solo ejecutar tests de personaA
+npm run test:personaA
 
-cucumber-js --tags @personaB
+# Solo ejecutar tests de personaB
+npm run test:personaB
+
+# O usando npx directamente
+npx cucumber-js --tags @personaA
+
+npx cucumber-js --tags @personaB
 
 npm run report
 
